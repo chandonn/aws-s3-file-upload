@@ -1,0 +1,38 @@
+{
+  "name": "aws-s3-file-upload",
+  "version": "0.1.0",
+  "description": "File Upload Microservice to S3",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tsc && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chandonn/aws-s3-file-upload.git"
+  },
+  "keywords": [
+    "microservice",
+    "aws",
+    "S3",
+    "node",
+    "express",
+    "typescript"
+  ],
+  "author": "Alexandre Correa de Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chandonn/aws-s3-file-upload/issues"
+  },
+  "homepage": "https://github.com/chandonn/aws-s3-file-upload#readme",
+  "dependencies": {
+    "aws-sdk": "2.1584.0",
+    "cors": "2.8.5",
+    "dotenv": "16.4.5",
+    "express": "4.19.1"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.21",
+    "typescript": "5.4.3"
+  }
+}
