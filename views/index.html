@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Upload Microservice</title>
+        <link rel="stylesheet" href="public/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Upload FIles to AWS With this Node.js Microservice</h2>
+            
+            <div class="form-container">
+                <form action="/api/upload" enctype="multipart/form-data" method="post">
+                    <div>
+                        <label class="file-input" for="file">
+                            Select a file
+                        </label>
+                        <input onchange="uploadOnChange" id="file" type="file" name="file" multiple="multiple"></input>
+                    </div>
+                    
+                    <div id="selected-files"></div>
+
+                    <button class="upload-button" type="submit">
+                        <span>
+                            upload
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </body>
+
+    <script src="scripts/index.js"></script>
+</html>
